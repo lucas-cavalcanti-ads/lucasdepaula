@@ -1,0 +1,46 @@
+body{ 
+    background-image: url("../imagens/img_animate.gif");
+    background-size: 105vw 110vh;
+    color: whitesmoke;
+    
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none; 
+}
+
+.menu li{
+    font-size: 1.1rem;
+    text-shadow: 2px 2px 5px grey;
+}
+
+a{
+    color: whitesmoke; 
+    text-decoration: none; 
+    
+}
+
+a:hover{
+    color: rgb(218, 214, 214);
+    font-size: 1.2rem;
+    text-decoration: underline;
+    transition: 2s;
+}
+
+.site-title,
+.site-subtitle{
+    text-align: center;
+    
+}
+
+h1{
+    font-size: 2rem;
+    margin-top: 42vh;
+    text-shadow: 4px 4px 10px grey;
+}
+
+h2{
+    font-style: italic;
+}
