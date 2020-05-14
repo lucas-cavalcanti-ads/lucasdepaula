@@ -1,8 +1,42 @@
+/* RESET DO CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{ 
-    background-image: url("../imagens/img_animate.gif");
-    background-size: 105vw 110vh;
-    color: whitesmoke;
     
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+}
+
+/* VERIFICANDO OS TAMANHOS DE TELA */
+
+@media(min-width:400px){
+    body{
+        font-size: 14px;
+    }
+
+}
+
+/* INICIO DO HEADER */
+
+header{
+    height: 100vh;
+    background-image: url("../imagens/img_animate.gif");
+    background-size: 100vw 100vh;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.menu{
+    
+    position: fixed;
+    width: 100vw;
+    background-color: rgba(245, 245, 245, 0.158);
+    border-radius: 0 50px 50px 0px;
 }
 
 .menu ul{
@@ -12,19 +46,30 @@ body{
 }
 
 .menu li{
-    font-size: 1.1rem;
     text-shadow: 2px 2px 5px grey;
+    font-size: 1.3em;
 }
+
+.menu a{
+    display: block;
+    padding: 1vh;
+
+}
+
+.secao-cabecalho{
+    padding:10vh ;
+
+}
+
+/* TÉRMINO DO HEADER */
 
 a{
     color: whitesmoke; 
     text-decoration: none; 
-    
 }
 
 a:hover{
     color: rgb(218, 214, 214);
-    font-size: 1.2rem;
     text-decoration: underline;
     transition: 2s;
 }
@@ -35,12 +80,57 @@ a:hover{
     
 }
 
+.site-title{
+    font-family: 'Overpass Mono', monospace;
+}
+
 h1{
     font-size: 2rem;
-    margin-top: 42vh;
     text-shadow: 4px 4px 10px grey;
 }
 
 h2{
     font-style: italic;
+}
+
+.secao-imagens{
+    margin-top: -0.2vh;
+    background-image: linear-gradient(black, white);
+    width: 100vw;
+    height: 100vh;
+}
+
+.secao-imagens .grid{
+    display: grid;
+    gap: 2em;
+    justify-content: center;
+}
+
+@media(min-width: 740px){
+    .secao-imagens .grid{
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media(min-width: 1200px){
+    .secao-imagens .grid{
+        align-content: center;
+        grid-template-columns: repeat(3, 30%);
+    }
+}
+
+.secao-imagens figure{
+    text-align: center;
+}
+
+.secao-imagens h2{
+    font-size: 3em;
+    margin-bottom: 2em;
+}
+
+.img-tecnologias{
+    border: solid black 2px;
+    height: 400px;
+    width: 320px;
+    object-fit: scale-down;
 }
