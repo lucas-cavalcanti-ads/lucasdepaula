@@ -32,7 +32,6 @@ header{
 }
 
 .menu{
-    
     position: fixed;
     width: 100vw;
     background-color: rgba(245, 245, 245, 0.158);
@@ -106,12 +105,24 @@ h2{
     justify-content: center;
 }
 
-@media(min-width: 740px){
+@media(min-width: 0px){
+    .menu{
+        display: none;
+    }
+
+}
+
+
+@media(min-width: 840px){
     .secao-imagens .grid{
         grid-template-columns: repeat(2, 50%);
     }
-}
 
+    .menu{
+        display: initial;
+    }
+
+}
 @media(min-width: 1200px){
     .secao-imagens .grid{
         align-content: center;
@@ -129,8 +140,67 @@ h2{
 }
 
 .img-tecnologias{
-    border: solid black 2px;
     height: 400px;
     width: 320px;
     object-fit: scale-down;
 }
+
+/* INICIO MENU PEQUENO */
+
+#check-menu{
+    display: none;
+}
+
+#icone-menu{
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.barra-menu{
+    background-color: #333333;
+    height: 40%;
+    width: 300px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -300px;
+    
+}
+
+.menu-pequeno{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+.menu-pequeno a{
+    text-decoration: none;
+}
+
+.link-menu{
+    background-color: #494950;
+    padding: 20px;
+    font-size: 1em;
+    transition: all .2s linear;
+    border: solid black 2px;
+    opacity: 0;
+    margin-top: 200px;
+}
+
+.link-menu:hover{
+    background-color: #050542;
+
+}
+
+#check-menu:checked ~ .barra-menu{
+    transform: translateX(300px );
+}
+
+#check-menu:checked ~ .barra-menu .menu-pequeno .link-menu{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: 0.2s;
+}
+
+/* TÉRMINO MENU PEQUENO */
