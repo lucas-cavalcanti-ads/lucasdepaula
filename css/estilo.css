@@ -110,6 +110,11 @@ h2{
         display: none;
     }
 
+    .menu-hamburguer{
+        display: initial;
+    }
+
+
 }
 
 
@@ -122,12 +127,21 @@ h2{
         display: initial;
     }
 
+    .menu-hamburguer{
+        display: none;
+    }
+
 }
 @media(min-width: 1200px){
     .secao-imagens .grid{
         align-content: center;
         grid-template-columns: repeat(3, 30%);
     }
+
+    .menu{
+        display: initial;
+    }
+
 }
 
 .secao-imagens figure{
