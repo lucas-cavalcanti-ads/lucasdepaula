@@ -5,98 +5,279 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/be8549e968.js" crossorigin="anonymous"></script>
     <title>Lucas de Paula</title>
 </head>
 <body>
-
-    <!-- INICIO MENU PEQUENO -->
-
-    <div class="menu-hamburguer">
-        <input type="checkbox" id="check-menu">
-        <label for="check-menu" id="icone-menu"><img src="./imagens/icon_menu.png" alt=""></label>
-        <div class="barra-menu">
-            <nav class="menu-pequeno">
-                <a href="index.html"><div class="link-menu">sobre</div></a>
-                <a href="https://github.com/lucas-cavalcanti-ads"><div class="link-menu">portifólio</div></a>
-                <a href="https://www.linkedin.com/in/lucascavalcantiads"><div class="link-menu">contato</div></a>
-            </nav>
-            
+    <!-- INICIO DA NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#secao-cabecalho">Lucas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#secao-cabecalho">inicío</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#secao-sobre">sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#secao-meuportifolio">tecnologias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#secao-portifolio" >portifólio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#secao-contato" >contato</a>
+              </li>
+          </ul>
         </div>
-    </div>
-    
-    <!-- TÉRMINO MENU PEQUENO -->
+    </nav>
+    <!-- INICIO DA NAVBAR -->
 
-    <!-- INICIO MENU GRANDE -->
+    <!-- INICIO DO HEADER -->
     <header>
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="index.html">sobre</a>
-                </li>
-                <li>
-                    <a href="https://github.com/lucas-cavalcanti-ads">portifólio</a>
-                </li>
-                <li>
-                    <a href="#secao-contato">contato</a>
-                </li>
-            </ul>
-        </nav>
-
-        <section class="secao-cabecalho">
+        <section class="secao-cabecalho" id="secao-cabecalho">
             <div>
                 <h1 class="site-title">
-                    Lucas Cavalcanti de Paula
+                {{ Lucas Cavalcanti de Paula }}
                 </h1>
                 <h2 class="site-subtitle">
-                    Software Enginner
+                    < Software Enginner />
                 </h2>
             </div>
         </section>
     </header>
     <!-- TÉRMINO MENU GRANDE -->
 
-  
+    <!-- INICIO DA SECAO SOBRE -->
+    <section class="secao-sobre" id="secao-sobre">
+        <h2 class="site-subtitle text-left">
+            O Lucas
+        </h2>
+            
+        <img src="imagens/foto-perfil.jpg" alt="Foto de perfil de Lucas Cavalcanti de Paula">
+   
+        <p class="text-light">
+            Bem vindo a minha página pessoal, bom o meu nome eu nem preicso dizer não é?! Está espalhado por toda a páginha haha. Bom por onde eu começo, eu tenho 23 anos, 1,79m, 68kg, brincadeira haha, bom para começar acho que posso começar dizendo que se você está vendo essa página o único tema que você encontrará será sobre tecnologia, eu sou um dos milhares de amantes que existem por tecnologia, eu respiro tecnologia todos os dias, seja no meu trampo, faculdade ou minhas poquissimas horas livres.
+        </p>
+
+    </section>
+    <!-- INICIO DA SECAO SOBRE -->
 
     <!-- INICIO DA SEÇÃO DE IMAGENS -->
-    <section class="secao-imagens">
-        <h2 class="site-subtitle">Tecnologias Preferidas</h2>
+    <section class="secao-meuportifolio" id="secao-meuportifolio">
+        <h2 class="site-subtitle">
+            Portifófio
+        </h2>
 
         <!-- INICIO DO GRID -->
-        <div class="grid">
+        <div class="grid container">
 
-            <figure>
-                <img class="img-tecnologias" src="./imagens/imagem_html.png" alt="Logo do HTML 5">
-                <figcaption>HTML 5</figcaption>
-            </figure>
-            <figure>
-                <img class="img-tecnologias" src="./imagens/imagem_css.png" alt=">Logo do CSS 3">
-                <figcaption>CSS 3</figcaption>
-            </figure>
-            <figure>
-                <img class="img-tecnologias" src="./imagens/imagem_javascript.png" alt="Logo do Java Script">
-                <figcaption>Java Script</figcaption>
-            </figure>
-            <figure>
-                <img class="img-tecnologias" src="./imagens/imagem_angular.png" alt="Logo Angular">
-                <figcaption>Angular JS</figcaption>
-            </figure>
-            <figure>
-                <img class="img-tecnologias" src="./imagens/imagem_github.png" alt="Logo Github">
-                <figcaption>Git Hub</figcaption>
-            </figure>
-            <figure>
-                <img class="img-tecnologias" src="./imagens/imagem_vscode.png" alt="Logo Visual Studio Code">
-                <figcaption>Visual Studio Code</figcaption>
-            </figure>
+            <!--CARD 1 - INICIO-->
+            <div class="col-9 col-sm-8 col-md-10 col-lg-8 col-xl-10 p-0 m-4 efeito-card">
+                <div class="card">
+                  <img src="./imagens/blog-frontend.png" class="card-img-top fundo-card" alt="Imagem de uma Land Page">
+                  <div class="card-body">
+                    <h5 class="card-title titulo">Blog Frontend</h5>
+                    <p class="card-text texto-cards text-secondary text-justify">Uma Land Page criada durante o meu desenvolvimento no Framework Bootstrap.</p>
+                    <a href="#" class="btn btn-primary botao-cor-especial" data-toggle="modal" data-target="#modalBlog">Saiba mais</a>
+                  </div>
+                </div>
+              </div>
+
+            <!--CARD 2 - INICIO-->
+            <div class="col-9 col-sm-8 col-md-10 col-lg-8 col-xl-10 p-0 m-4 efeito-card">
+                <div class="card">
+                  <img src="./imagens/projeto-hotel.png" class="card-img-top fundo-card" alt="Imagem de uma pagina HTML de um hotel">
+                  <div class="card-body">
+                    <h5 class="card-title titulo">Projeto Hotel</h5>
+                    <p class="card-text texto-cards text-secondary text-justify">Essa foi a primeira Land Page que criei com HTML 5 e CSS 3.</p>
+                    <a href="#" class="btn btn-primary botao-cor-especial" data-toggle="modal" data-target="#modalHotel">Saiba mais</a>
+                  </div>
+                </div>
+            </div>
+
+            <!--CARD 3 - INICIO-->
+            <div class="col-9 col-sm-8 col-md-10 col-lg-8 col-xl-10 p-0 m-4 efeito-card">
+              <div class="card">
+                <img src="./imagens/cadastro.png" class="card-img-top fundo-card" alt="Imagem de uma aplicação Angular JS">
+                <div class="card-body">
+                  <h5 class="card-title titulo">Cadastro de Imagem</h5>
+                  <p class="card-text texto-cards text-secondary text-justify">Aplicação em Angular JS que permite o cadastro, exlusão e alterações de imagens.</p>
+                  <a href="#" class="btn btn-primary botao-cor-especial" data-toggle="modal" data-target="#modalCadastro">Saiba mais</a>
+                </div>
+              </div>
+            </div>
+
+            <!--CARD 4 - INICIO-->
+            <div class="col-9 col-sm-8 col-md-10 col-lg-8 col-xl-10 p-0 m-4 efeito-card">
+              <div class="card">
+                <img src="./imagens/prototipo-bytebank.png" class="card-img-top fundo-card" alt="Logo Bootstrap">
+                <div class="card-body">
+                  <h5 class="card-title titulo">Protótipo Bytebank - UX / UI</h5>
+                  <p class="card-text texto-cards text-secondary text-justify">Protótipo realizado durante o meu desenvolvimento em UX e UI.</p>
+                  <a href="#" class="btn btn-primary botao-cor-especial" data-toggle="modal" data-target="#modalByte">Saiba mais</a>
+                </div>
+              </div>
+            </div>
+
+            <!--CARD 5 - INICIO-->
+            <div class="col-9 col-sm-8 col-md-10 col-lg-8 col-xl-10 p-0 m-4 efeito-card">
+              <div class="card">
+                <img src="./imagens/landpage-b2w.png" class="card-img-top fundo-card" alt="Fundo de uma Land Page Web">
+                <div class="card-body">
+                  <h5 class="card-title titulo">Land Page Challenger</h5>
+                  <p class="card-text texto-cards text-secondary text-justify">Essa é uma Land Page que foi proposta pela FIAP devido a Challenger.</p>
+                  <a href="#" class="btn btn-primary botao-cor-especial" data-toggle="modal" data-target="#modalLandChallenger">Saiba mais</a>
+                </div>
+              </div>
+            </div>
+
+            <!--CARD 6 - INICIO-->
+            <div class="col-9 col-sm-8 col-md-10 col-lg-8 col-xl-10 p-0 m-4 efeito-card">
+              <div class="card">
+                <img src="./imagens/aplicacao-b2w.png" class="card-img-top fundo-card" alt="Fundo de uma Land Page Web">
+                <div class="card-body">
+                  <h5 class="card-title titulo">Protótipo Aplicação Challenger</h5>
+                  <p class="card-text texto-cards text-secondary text-justify">Protótipo da aplicação para a problemática proposta.</p>
+                  <a href="#" class="btn btn-primary botao-cor-especial" data-toggle="modal" data-target="#modalAppChallenger">Saiba mais</a>
+                </div>
+              </div>
+            </div>
 
         </div>
         <!-- TÉRMINO DO GRID -->
     </section>
     <!-- TÉRMINO DA SEÇÃO DE IMAGENS -->
 
-     <!-- INICIO DA SEÇÃO DE CONTATO -->
+    <!-- INICIO DA SEÇÃO DE PORTIFÓLIO -->
+    <section class="secao-portifolio" id="secao-portifolio">
+        <h2 class="site-subtitle">
+            Portifólio
+        </h2>
 
+        <!-- INICIO DO GRID -->
+        <div class="grid">
+                                                          
+            <!-- CARTAO 1 -->
+            <div class="flip-cartao">
+                <div class="cartao">
+                    <div class="cartao-frente">
+                        <figure>
+                            <img class="img-portifolio" src="./imagens/imagem_html.png" alt="Logo do HTML 5">
+                        </figure>
+                    </div>
+                    <div class="cartao-fundo">
+                        Oi, eu sou a parte de trás
+                    </div>
+                </div>
+            </div>
+            <!-- CARTAO 1 -->
+            <div class="flip-cartao">
+                <div class="cartao">
+                    <div class="cartao-frente">
+                        <figure>
+                            <img class="img-portifolio" src="./imagens/imagem_css.png" alt="Logo do HTML 5">
+                        </figure>
+                    </div>
+                    <div class="cartao-fundo">
+                        Oi, eu sou a parte de trás
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARTAO 2 -->
+            <div class="flip-cartao">
+                <div class="cartao">
+                    <div class="cartao-frente">
+                        <figure>
+                            <img class="img-portifolio" src="./imagens/imagem_javascript.png" alt="Logo do HTML 5">
+                        </figure>
+                    </div>
+                    <div class="cartao-fundo">
+                        Oi, eu sou a parte de trás
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARTAO 3 -->
+            <div class="flip-cartao">
+                <div class="cartao">
+                    <div class="cartao-frente">
+                        <figure>
+                            <img class="img-portifolio" src="./imagens/imagem_angular.png" alt="Logo do HTML 5">
+                        </figure>
+                    </div>
+                    <div class="cartao-fundo">
+                        Oi, eu sou a parte de trás
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARTAO 4 -->
+            <div class="flip-cartao">
+                <div class="cartao">
+                    <div class="cartao-frente">
+                        <figure>
+                            <img class="img-portifolio" src="./imagens/imagem_github.png" alt="Logo do HTML 5">
+                        </figure>
+                    </div>
+                    <div class="cartao-fundo">
+                        Oi, eu sou a parte de trás
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARTAO 5 -->
+            <div class="flip-cartao">
+                <div class="cartao">
+                    <div class="cartao-frente">
+                        <figure>
+                            <img class="img-portifolio" src="./imagens/imagem-bootstrap.png" alt="Logo do HTML 5">
+                        </figure>
+                    </div>
+                    <div class="cartao-fundo">
+                        Oi, eu sou a parte de trás
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARTAO 6 -->
+            <div class="flip-cartao">
+                <div class="cartao">
+                    <div class="cartao-frente">
+                        <figure>
+                            <img class="img-portifolio" src="./imagens/imagem_vscode.png" alt="Logo do HTML 5">
+                        </figure>
+                    </div>
+                    <div class="cartao-fundo">
+                        Oi, eu sou a parte de trás
+                    </div>
+                </div>
+            </div>
+            <!-- CARTAO 6 -->
+            <div class="flip-cartao">
+                <div class="cartao">
+                    <div class="cartao-frente">
+                        <figure>
+                            <img class="img-portifolio" src="./imagens/imagem_vscode.png" alt="Logo do HTML 5">
+                        </figure>
+                    </div>
+                    <div class="cartao-fundo">
+                        Oi, eu sou a parte de trás
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TÉRMINO DO GRID -->
+    </section>
+    <!-- TÉRMINO DA SEÇÃO DE IMAGENS -->
+    
+    <!-- INICIO DA SEÇÃO DE CONTATO -->
     <section class="secao-contato" id="secao-contato">
 
         <h2 class="site-subtitle">Comunique-se comigo</h2>
@@ -124,11 +305,150 @@
      <div class="box-5">
         <div class="box-5-1">
             <p class="texto-rodape">
-                &copy; 2020 Lucas de Paula - Todos os direitos reservados.
+                &copy; 2020  Lucas Cavalcanti de Paula - Todos os direitos reservados.
             </p>
         </div>
     </div>
     <!-- TÉRMINO PARTE INFERIOR RODAPÉ -->
 
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+
+
 </body>
+
+
+<!-- INICIO MODAL - BLOG FRONTEND 1--> 
+<div class="modal fade" id="modalBlog" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Blog Frontend</h5> <!-- TITULO MODAL -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body text-justify"> <!-- TEXTO MODAL -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minima odio quo nemo, culpa, dolore amet placeat ex consequuntur fugit error iure earum accusantium voluptate aut maxime molestias. Similique, maiores.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary bg-danger botao-fechar" data-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- INICIO MODAL - BLOG FRONTEND -->
+
+<!-- INICIO MODAL - PROJETO HOTEL 2-->
+<div class="modal fade" id="modalHotel" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Projeto Hotel</h5> <!-- TITULO MODAL -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body text-justify"> <!-- TEXTO MODAL -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minima odio quo nemo, culpa, dolore amet placeat ex consequuntur fugit error iure earum accusantium voluptate aut maxime molestias. Similique, maiores.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary bg-danger botao-fechar" data-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- INICIO MODAL - PROJETO HOTEL -->
+
+<!-- INICIO MODAL - CADASTRO DE FOTOS 3-->
+<div class="modal fade" id="modalCadastro" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Cadastro de Imagens</h5> <!-- TITULO MODAL -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body text-justify"> <!-- TEXTO MODAL -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minima odio quo nemo, culpa, dolore amet placeat ex consequuntur fugit error iure earum accusantium voluptate aut maxime molestias. Similique, maiores.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary bg-danger botao-fechar" data-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- INICIO MODAL - CADASTRO DE FOTOS -->
+
+<!-- INICIO MODAL - PROTOTIPO BYTE BANK 4-->
+<div class="modal fade" id="modalByte" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Protótipo Bytebank - UX / UI</h5> <!-- TITULO MODAL -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body text-justify"> <!-- TEXTO MODAL -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minima odio quo nemo, culpa, dolore amet placeat ex consequuntur fugit error iure earum accusantium voluptate aut maxime molestias. Similique, maiores.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary bg-danger botao-fechar" data-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- INICIO MODAL - BLOG PROTOTIPO BYTE BANK -->
+
+<!-- INICIO MODAL - LAND PAGE CHALLENGER 5-->
+<div class="modal fade" id="modalLandChallenger" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Land Page Challenger</h5> <!-- TITULO MODAL -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body text-justify"> <!-- TEXTO MODAL -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minima odio quo nemo, culpa, dolore amet placeat ex consequuntur fugit error iure earum accusantium voluptate aut maxime molestias. Similique, maiores.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary bg-danger botao-fechar" data-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- INICIO MODAL - LAND PAGE CHALLENGER -->
+
+<!-- INICIO MODAL - APLICACAO CHALLENGER 6-->
+<div class="modal fade" id="modalAppChallenger" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Protótipo Aplicação Challenger</h5> <!-- TITULO MODAL -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body text-justify"> <!-- TEXTO MODAL -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minima odio quo nemo, culpa, dolore amet placeat ex consequuntur fugit error iure earum accusantium voluptate aut maxime molestias. Similique, maiores.
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary bg-danger botao-fechar" data-dismiss="modal">Fechar</button>
+        </div>
+        </div>
+    </div>
+</div>
+<!-- INICIO MODAL - APLICACAO CHALLENGER -->
 </html>
+
+  
